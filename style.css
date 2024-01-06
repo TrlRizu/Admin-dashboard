@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Main;
+    src: url('Phonk\ Regular\ DEMO.otf');
+}
+
+:root {
+    --font-base: Main;
+}
+
+
 body {
     margin: 0 !important;
 }
@@ -16,6 +26,10 @@ body {
     padding: 1rem;
 
     
+}
+
+.sidebar p {
+    font-family: Main;
 }
 
 
