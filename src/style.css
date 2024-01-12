@@ -154,7 +154,15 @@ body {
     border: 3px solid var(--color-tan);
     height: 40px;
     width: 40px;
+
+    position: relative;
 }
+
+.options-img a {
+    position: absolute;
+    display: block;
+}
+
 
 .options-img:hover {
     animation: spin 500ms ease-out;
@@ -238,11 +246,14 @@ body {
 .links-history:hover .history, 
 .links-tasks:hover .tasks, 
 .links-communities:hover .communities,
-.help-settings:hover .settings,
-.help-support:hover .support,
+.help-settings:hover .help,
+.help-support:hover .info,
 .help-privacy:hover .privacy {
     filter: drop-shadow(3px 5px black);
     fill: var(--color-tan);
+    scale: 1.2;
+    transition: scale 200ms ease-in;
+    cursor: pointer;
 }
 
 .links-home:hover p,
@@ -255,6 +266,7 @@ body {
 .help-support:hover p,
 .help-privacy:hover p {
     color: var(--color-brown);
+    cursor: pointer;
 }
 
 .contents {
@@ -293,7 +305,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 10px;
     display: block;
-    width: 300px; /* Set a fixed width for the box */
+    width: 300px;
     height: 300px;
     float: left;
     margin: -1px 0 0 -1px;
@@ -303,17 +315,18 @@ body {
     );
     background-size: 100% 202%;
     transition: all 0.2s ease;
-    animation: up-bump 0.4s ease; /* Use up-bump animation initially */
+    animation: up-bump 0.4s ease;
 }
 
 .box h2 {
     font-weight: 400;
     letter-spacing: -1.5px;
     line-height: 1.2;
+    font-family: var(--font-text);
 }
 
 .box h3 {
-    font: 0.8em "Lucida Grande", serif;
+    font: 0.8em var(--font-alt);
 }
   
 .box:hover {
