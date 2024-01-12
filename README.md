@@ -1,6 +1,6 @@
 # Admin-dashboard
 
-![]('./screenshots/webpage.png')
+![](https://github.com/TrlRizu/Admin-dashboard/blob/main/screenshot/webpage.png)
 
 Portfolio dashboard mock inspired by The Odin Project's  Admin Dashboard project
 - Mock static website
